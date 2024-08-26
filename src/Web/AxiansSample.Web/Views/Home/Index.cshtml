@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="main-view">
+    <partial name="_Incidents" />
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/home/incidents.js"></script>
+@section Scripts
+{
+    <script>
+        var incidents;
+        (() => {
+            //uesss
+            incidents = new Incidents();
+        })()
+    </script>
+}

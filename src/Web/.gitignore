@@ -1,0 +1,64 @@
+﻿###################
+# compiled source #
+###################
+.vs
+#*.dll
+#*.exe
+*.pdb
+*.cache
+*.suo
+*.user
+
+# Azure Functions localsettings file
+AzureAppsettings.json
+AzureAppsettings.*.json
+
+# Include dlls if they�re in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+!/packages/*/tools/*.dll
+!/packages/*/tools/*/*.dll
+!/packages/*/tools/*.exe
+!/packages/*/tools/*/*.exe
+
+# Include dlls if they're in the CommonReferences directory
+!*CommonReferences/*.dll
+
+####################
+# VS Upgrade stuff #
+####################
+UpgradeLog.XML
+_UpgradeReport_Files/
+
+###############
+# Directories #
+###############
+bin/
+obj/
+TestResults/
+node_modules
+
+.sass-cache/
+
+#*.DS_Store
+
+#._.DS_Store
+
+###################
+# Web publish log #
+###################
+*.Publish.xml
+
+######################
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+#Allow NuGet.exe (do not ignore)
+
+!.nuget/NuGet.exe
+
+
+appsettings.*.json
+
